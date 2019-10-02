@@ -1,0 +1,66 @@
+/* This styles the header to give it space between the ul items
+and it should remove the bullet points but doesn't for some reason */
+
+header {
+    border-style: solid;
+    border-color: goldenrod;
+    padding: 1px;
+    
+    
+    }
+    /* This makes text purple. Not sure which text but I hope it to be the text
+    that is contained in the month-list and disabled */
+.disabled {
+    color: grey;
+
+}
+a.disabled {
+    color: purple;
+}
+/* This somehow turns the text I'm blue, blue. Although I was aiming at the red text so who knows.  */
+h4  div {
+    color: blue;
+}
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 50px 0px 50px;
+    margin: auto;
+}
+.active {
+    color: yellow;
+}
+/* These two elements style the font of the first and second div resepectively
+in the parent class of the child of parent h4 */
+.parent > div > div {
+    color: red;
+}
+.parent > div > h4 + div{
+    color: blue;
+}
+
+/* These make the Background of the first and last h4 in
+the div class of parent blue */
+.parent div > h4:last-of-type {
+    background-color: blue;
+
+}
+.parent div > h4:first-of-type {
+    background-color: red;
+}
+.grandparent > h4 {
+    border-style: solid;
+    border-color: black;
+    padding: 1px;
+    border-radius: 25px;
+}
+/* This targets all elements with the promo class and makes
+the text bold and gold */
+.promo {
+    font-weight: bold;
+    color: gold;
+}
+/* This should make the input text fields all 25px height */
+input {
+    height: 25px;
+}
